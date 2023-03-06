@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* These styles will be purged */
+
+@layer base {
+    :root {
+        --color-cyan-500: theme('colors.cyan.500');
+        --color-purple-500: theme('colors.purple.500');
+    }
+
+    @font-face {
+        font-family: IBM Plex Sans;
+        font-weight: 400;
+        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Light.woff') format('woff');
+        font-display: block;
+    }
+
+    @font-face {
+        font-family: IBM Plex Sans;
+        font-weight: 400;
+        font-style: italic;
+        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-LightItalic.woff') format('woff');
+        font-display: block;
+    }
+
+    @font-face {
+        font-family: IBM Plex Sans;
+        font-weight: 500;
+        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Regular.woff') format('woff2');
+        font-display: block;
+    }
+
+    @font-face {
+        font-family: IBM Plex Sans;
+        font-weight: 500;
+        font-style: italic;
+        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Italic.woff') format('woff2');
+        font-display: block;
+    }
+
+    @font-face {
+        font-family: IBM Plex Sans;
+        font-weight: 600;
+        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Medium.woff') format('woff');
+        font-display: block;
+    }
+
+    @font-face {
+        font-family: IBM Plex Sans;
+        font-weight: 600;
+        font-style: italic;
+        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-MediumItalic.woff') format('woff');
+        font-display: block;
+    }
+
+    @font-face {
+        font-family: IBM Plex Sans;
+        font-weight: 700;
+        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Semibold.woff') format('woff');
+        font-display: block;
+    }
+
+    @font-face {
+        font-family: IBM Plex Sans;
+        font-weight: 700;
+        font-style: italic;
+        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-SemiboldItalic.woff') format('woff');
+        font-display: block;
+    }
+
+    @font-face {
+        font-family: IBM Plex Sans;
+        font-weight: 800;
+        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Bold.woff') format('woff');
+        font-display: block;
+    }
+
+    @font-face {
+        font-family: IBM Plex Sans;
+        font-weight: 800;
+        font-style: italic;
+        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-BoldItalic.woff') format('woff');
+        font-display: block;
+    }
+
+    body {
+        font-family: 'IBM Plex Sans';
+    }
+
+    .font-sans {
+        font-family: 'IBM Plex Sans';
+    }
+}
+
+@layer components {}
+
+@layer utilities {}
+
+* {
+    font-family: IBM Plex Sans;
+    overflow-x: hidden;
+}
+
+.card-shadow-cs {
+    box-shadow: 0 10px 44px hsl(0deg 0% 0% / 5%), 0 20px 48px hsl(0deg 0% 0% / 5%), 0 1px 24px hsl(0deg 0% 0% / 5%);
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-shadow-wrapper {
+    box-shadow: none;
+}
+
+.cub-1 {
+    width: 20vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scale(1, -1) translate(50%, 0%);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1) translate(50%, 0%);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+}
+
+.cub-2 {
+    width: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.preview-img {
+    width: 80vh;
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 767.5px) {
+    .cub-1 {
+        width: 10vh;
+    }
+
+    .card-shadow-wrapper {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        box-shadow: 0 10px 44px hsl(0deg 0% 0% / 5%), 0 20px 48px hsl(0deg 0% 0% / 5%), 0 1px 24px hsl(0deg 0% 0% / 5%);
+    }
+}
+
+@media only screen and (max-width: 991.5px) {}
