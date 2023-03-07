@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Satoshi";
+    font-display: block;
+    src: local('Satoshi'), url('assets/fonts/Satoshi-Variable.woff2') format('woff2'),
+        /* will be preloaded */
+        url('assets/fonts/Satoshi-Variable.woff') format('woff'), url('assets/fonts/Satoshi-Variable.ttf') format('truetype'), url('assets/fonts/Satoshi-Variable.eot') format('embedded-opentype');
+    /* src: url("assets/fonts/Satoshi-Variable.ttf") format("truetype"); */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,89 +18,6 @@
         --color-cyan-500: theme('colors.cyan.500');
         --color-purple-500: theme('colors.purple.500');
     }
-
-    @font-face {
-        font-family: IBM Plex Sans;
-        font-weight: 400;
-        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Light.woff') format('woff');
-        font-display: block;
-    }
-
-    @font-face {
-        font-family: IBM Plex Sans;
-        font-weight: 400;
-        font-style: italic;
-        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-LightItalic.woff') format('woff');
-        font-display: block;
-    }
-
-    @font-face {
-        font-family: IBM Plex Sans;
-        font-weight: 500;
-        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Regular.woff') format('woff2');
-        font-display: block;
-    }
-
-    @font-face {
-        font-family: IBM Plex Sans;
-        font-weight: 500;
-        font-style: italic;
-        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Italic.woff') format('woff2');
-        font-display: block;
-    }
-
-    @font-face {
-        font-family: IBM Plex Sans;
-        font-weight: 600;
-        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Medium.woff') format('woff');
-        font-display: block;
-    }
-
-    @font-face {
-        font-family: IBM Plex Sans;
-        font-weight: 600;
-        font-style: italic;
-        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-MediumItalic.woff') format('woff');
-        font-display: block;
-    }
-
-    @font-face {
-        font-family: IBM Plex Sans;
-        font-weight: 700;
-        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Semibold.woff') format('woff');
-        font-display: block;
-    }
-
-    @font-face {
-        font-family: IBM Plex Sans;
-        font-weight: 700;
-        font-style: italic;
-        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-SemiboldItalic.woff') format('woff');
-        font-display: block;
-    }
-
-    @font-face {
-        font-family: IBM Plex Sans;
-        font-weight: 800;
-        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-Bold.woff') format('woff');
-        font-display: block;
-    }
-
-    @font-face {
-        font-family: IBM Plex Sans;
-        font-weight: 800;
-        font-style: italic;
-        src: url('https://cdn.rareblocks.xyz/fonts/IBMPlexSans/IBMPlexSans-BoldItalic.woff') format('woff');
-        font-display: block;
-    }
-
-    body {
-        font-family: 'IBM Plex Sans';
-    }
-
-    .font-sans {
-        font-family: 'IBM Plex Sans';
-    }
 }
 
 @layer components {}
@@ -99,7 +25,7 @@
 @layer utilities {}
 
 * {
-    font-family: IBM Plex Sans;
+    font-family: 'Satoshi';
     overflow-x: hidden;
 }
 

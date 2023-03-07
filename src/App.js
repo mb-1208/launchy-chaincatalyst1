@@ -102,9 +102,9 @@ function App() {
               <img className="w-3/4 h-8 mx-auto h-auto" src="./assets/cc-logo.png" alt="" />
             </div>
             <div className="text-center">
-              <h1 className="text-3xl font-medium text-gray-900 sm:text-4xl xl:text-4xl overflow-y-hidden" style={{ letterSpacing: '-2px' }}><span className='font-black'>Web3 Made</span> <br /> Simple</h1>
+              <h1 className="text-3xl font-normal text-gray-900 sm:text-4xl xl:text-4xl overflow-y-hidden" style={{ letterSpacing: '-1px' }}><span className='font-black'>Web3 Made</span> <br /> Simple</h1>
 
-              <p className="px-4 mt-5 font-semibold text-gray-900 sm:px-0">"Stay up to date with the latest web3 products, news, strategies and trends."</p>
+              <p className="px-4 mt-5 font-normal text-gray-900 sm:px-0">"Stay up to date with the latest web3 products, news, strategies and trends."</p>
             </div>
 
             <div className="space-y-3 mt-4">
@@ -151,7 +151,7 @@ function App() {
               </div>
             </div>
             <div className='text-center my-4'>
-              <p className='pt-2 pl-3 font-semibold'>Read by people working at:</p>
+              <p className='pt-2 pl-3 font-normal'>Read by people working at:</p>
             </div>
             <div>
               <div className='grid grid-cols-3'>
