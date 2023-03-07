@@ -81,9 +81,12 @@
     }
 
     .flex-center {
-        display: block !important;
+        /* display: block !important;
         align-items: unset !important;
-        justify-content: unset !important;
+        justify-content: unset !important; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
