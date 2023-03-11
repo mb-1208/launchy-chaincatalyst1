@@ -62,6 +62,7 @@ function App() {
           setToastMessage('Email successfully subscribed!');
           setTimeout(function () {
             setProcessCondition('Subs');
+            window.location.replace('https://launchy.beehiiv.com/');
           }, 2000);
         }).catch(function (error) {
           console.log(error);
